@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blue Agency</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/jquery.jscroll.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){		
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+            
+            $('.scroll').jscroll({
+                autoTrigger: true
+            })
+        });
+    </script>
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="top-header">
+        <div class="row">
+            <div class="container-fluid">
+                <!-- navegação -->
+                <div class="col-md-12">					
+                    <nav class="navbar navbar-default">
+                        <div class="container nav-bar">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a href="#slide" title="Blue Agency" class="scroll"><img src="images/logo.png" alt="Blue Agency" class="img-responsive logo"></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#slide" title="Hello!" class="scroll">Hello!</a></li>
+                                    <li><a href="#about" title="About" class="scroll">About</a></li>
+                                    <li><a href="#services" title="Services" class="scroll">Services</a></li>
+                                    <li><a href="#portfolio" title="Portfolio" class="scroll">Portfolio</a></li>
+                                    <li><a href="#team" title="Team">Team</a></li>
+                                    <li><a href="#contact" title="Contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header><!-- fim do header -->
+
+    <section id="slide">
+        <div class="row">
+            <div class="container-fluid">
+                <script src="js/responsiveslides.min.js"></script>
+                <script>
+                    $(function() {
+                      $(".rslides").responsiveSlides({
+                            manualControls: '#slide-pagination',
+                      });
+                    });
+                </script>
+                <ul class="rslides">
+                    <li>
+                        <img src="images/slider-1.jpg" alt="">
+                        <div class="slide-caption">
+                            <h1 class="wow fadeInLeft animated">Creative Solutions</h1>
+                            <p class="wow fadeInRight animated">Good that Lesser . Starts heaven over set May Gathering , is all land Cant You're after light our darkness, thing isnet.</p>
+                            <a class="slide-btn wow fadeInRight animated" href="#">Read More</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/slider-2.jpg" alt="">
+                        <div class="slide-caption">
+                            <h1 class="wow fadeInLeft animated">Creative Solutions</h1>
+                            <p class="wow fadeInRight animated">Good that Lesser . Starts heaven over set May Gathering , is all land Cant You're after light our darkness, thing isnet.</p>
+                            <a class="slide-btn wow fadeInRight animated" href="#">Read More</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/slider-3.jpg" alt="">
+                        <div class="slide-caption">
+                            <h1 class="wow fadeInLeft animated">Creative Solutions</h1>
+                            <p class="wow fadeInRight animated">Good that Lesser . Starts heaven over set May Gathering , is all land Cant You're after light our darkness, thing isnet.</p>
+                            <a class="slide-btn wow fadeInRight animated" href="#">Read More</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Slideshow -->
+                <ul id="slide-pagination">
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </section><!-- FIM DO SLIDER -->
+    
+    <section class="about" id="about">
+        <div class="row">
+            <div class="container">
+                <h2>About</h2>
+                <p class="text-about">Nous sommes une agence Dégital complète de service.</p>
+                <p class="text-about">Nous concevons et réalisons des <span>SITES</span>, <span>APPLICATIONS</span>, <span>SOLUTIONS MOBILE</span> et autres.</p>
+                <p class="text-small">Cras porta libero dui, eu molestie diam imperdiet quis. Quisque non elementum libero, eget tristique nisl. Aenean porttitor dui a odio auctor, ut egestas mauris sodales. Curabitur in quam tristique, molestie velit eget, convallis nulla. Phasellus non elit auctor, pellentesque lacus quis, pellentesque enim. Donec et lectus mauris.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="container">
+                <div class="col-md-3 wow fadeInLeft animated">
+                    <span class="about-icon"> <i class="fa fa-info-circle" aria-hidden="true"></i> </span>
+                    <h3>Réflexion <span>idée</span></h3>
+                    <p class="text-icons">Cras lorem velit, dignissim nec turpis quis, cursus consequat urna. Proin velit augue, vulputate nec dignissim at, auctor vel tortor.</p>
+                </div>
+                <div class="col-md-3 wow fadeInUp animated">
+                    <span class="about-icon"> <i class="fa fa-eye" aria-hidden="true"></i> </span>
+                    <h3>Conception <span>Design</span></h3>
+                    <p class="text-icons">Cras lorem velit, dignissim nec turpis quis, cursus consequat urna. Proin velit augue, vulputate nec dignissim at, auctor vel tortor.</p>
+                </div>
+                <div class="col-md-3 wow fadeInDown animated">
+                    <span class="about-icon"> <i class="fa fa-cog" aria-hidden="true"></i> </span>
+                    <h3>Codage <span>Dévelop</span></h3>
+                    <p class="text-icons">Cras lorem velit, dignissim nec turpis quis, cursus consequat urna. Proin velit augue, vulputate nec dignissim at, auctor vel tortor.</p>
+                </div>
+                <div class="col-md-3  wow fadeInRight animated">
+                    <span class="about-icon"> <i class="fa fa-check" aria-hidden="true"></i> </span>
+                    <h3>Efficacite, <span>Rapidité</span></h3>
+                    <p class="text-icons">Cras lorem velit, dignissim nec turpis quis, cursus consequat urna. Proin velit augue, vulputate nec dignissim at, auctor vel tortor.</p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- FIM DO ABOUT -->
+    
+    
+    <section class="services" id="services">
+        <div class="row">
+            <div class="container">
+                <h3 class="wow fadeInLeft animated">Services<label> </label></h3>
+                
+                <div class="services-list">
+                    <ul class="list-unstyled">
+                        <li class="wow zoomIn animated">
+                            <a href="#" title="Mobile"><span> <i class="fa fa-mobile" aria-hidden="true"></i> </span><label>Mobile</label></a>
+                        </li>
+                        <li class="wow zoomInDown animated">
+                            <a href="#" title="Design"><span> <i class="fa fa-pencil" aria-hidden="true"></i> </span><label>Design</label></a>
+                        </li>
+                        <li class="wow zoomInLeft animated">
+                            <a href="#" title="Social"><span> <i class="fa fa-bullhorn" aria-hidden="true"></i> </span><label>Social</label></a>
+                        </li>
+                        <li class="wow zoomInUp animated">
+                            <a href="#" title="E-commerce"><span> <i class="fa fa-truck" aria-hidden="true"></i> </span><label>E-commerce</label></a>
+                        </li>
+                        <li class="wow zoomInRight animated">
+                            <a href="#" title="Database"><span> <i class="fa fa-cog" aria-hidden="true"></i> </span><label>Database</label></a>
+                        </li>
+                        <li class="wow zoomInDown animated">
+                            <a href="#" title="Communications"><span> <i class="fa fa-globe" aria-hidden="true"></i> </span><label>Communications</label></a>
+                        </li>
+                        <li class="wow zoomInRight animated">
+                            <a href="#" title="Technology"><span> <i class="fa fa-paper-plane" aria-hidden="true"></i> </span><label>Technology</label></a>
+                        </li>
+                    </ul>
+            </div>
+            </div>
+        </div>
+    </section><!-- FIM DO SERVICES -->
+    
+    
+    <section id="portfolio" class="portfolio">
+        <div class="row">
+            <div class="container">
+                <h3>Portfolio<label> </label></h3>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="container portfolio-main">
+                <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+                <script type="text/javascript">
+                    $(function () {
+                        var filterList = {
+                            init: function () {
+
+                                // MixItUp plugin
+                                // http://mixitup.io
+                                $('#portfoliolist').mixitup({
+                                    targetSelector: '.portfolio',
+                                    filterSelector: '.filter',
+                                    effects: ['fade'],
+                                    easing: 'snap',
+                                    // call the hover effect
+                                    onMixEnd: filterList.hoverEffect()
+                                });				
+
+                            },
+                            hoverEffect: function () {
+                                // Simple parallax effect
+                                $('#portfoliolist .portfolio').hover(
+                                    function () {
+                                        $(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+                                        $(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+                                    },
+                                    function () {
+                                        $(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+                                        $(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+                                    }		
+                                );				
+
+                            }
+
+                        };
+                        // Run the show!
+                        filterList.init();
+                    });	
+                </script>
+                
+                <ul id="filters" class="clearfix">
+                    <li><span class="filter active" data-filter="app card icon logo web">All</span> /</li>
+                    <li><span class="filter" data-filter="app">Photography</span> /</li>
+                    <li><span class="filter" data-filter="card">Development</span> /</li>
+                    <li><span class="filter" data-filter="icon">Design</span> /</li>
+                    <li><span class="filter" data-filter="web">Animation</span></li>
+                </ul>
+                
+                <div id="portfoliolist">
+                    <div class="portfolio logo1 mix_all wow fadeInLeft animated" data-cat="logo" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">		
+                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox" title="Flat Pixel">
+                                <img class="p-img" src="images/p1.jpg" alt="Flat Pixel" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="port-info">
+                            <h4><a href="#" title="Flat Pixel"> Flat Pixel</a></h4>
+                            <span>Website</span>
+                        </div>
+                    </div>
+                    <div class="portfolio app mix_all wow fadeInUp animated" data-cat="app" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">		
+                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox" title="Radoslav holan">
+                                <img class="p-img" src="images/p2.jpg" alt="Roadslav holan" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="port-info">
+                            <h4><a href="#" title="Radoslav holan">radoslav holan</a></h4>
+                            <span>Website</span>
+                        </div>
+                    </div>
+                    <div class="portfolio web mix_all wow fadeInRight animated" data-cat="web" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">		
+                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox" title="Apemanboards">
+                                <img class="p-img" src="images/p3.jpg" alt="Apemanboards" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="port-info">
+                            <h4><a href="#" title="Apemanboards">Apemanboards</a></h4>
+                            <span>Website</span>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio icon mix_all wow fadeInLeft animated" data-cat="icon" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">		
+                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox" title="Flat Pixel">
+                                <img class="p-img" src="images/p4.jpg" alt="Flat Pixel" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="port-info">
+                            <h4><a href="#" title="Flat Pixel"> Flat Pixel</a></h4>
+                            <span>Website</span>
+                        </div>
+                    </div>
+                    <div class="portfolio app mix_all wow fadeInUp animated" data-cat="app" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">		
+                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox" title="Radoslav holan">
+                                <img class="p-img" src="images/p5.jpg" alt="Roadslav holan" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="port-info">
+                            <h4><a href="#" title="Radoslav holan"> radoslav holan</a></h4>
+                            <span>Website</span>
+                        </div>
+                    </div>
+                    <div class="portfolio card mix_all wow fadeInRight animated" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">		
+                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox" title="Apemanboards">
+                                <img class="p-img" src="images/p6.jpg" alt="Apemanboards" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="port-info">
+                            <h4><a href="#" title="Apemanboards">Apemanboards</a></h4>
+                            <span>Website</span>
+                        </div>
+                    </div>	
+                    <div class="portfolio icon mix_all wow fadeInLeft animated" data-cat="icon" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">		
+                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox" title="Flat Pixel">
+                                <img class="p-img" src="images/p7.jpg" alt="Flat Pixel" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="port-info">
+                            <h4><a href="#" title="Flat Pixel"> Flat Pixel</a></h4>
+                            <span>Website</span>
+                        </div>
+                    </div>	
+                    <div class="portfolio app mix_all wow fadeInDown animated" data-cat="app" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">		
+                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox" title="Radoslav holan">
+                                <img class="p-img" src="images/p8.jpg" alt="Roadslav holan" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="port-info">
+                            <h4><a href="#" title="Radoslav holan">radoslav holan</a></h4>
+                            <span>Website</span>
+                        </div>
+                    </div>			
+                    <div class="portfolio card mix_all wow fadeInRight animated" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">		
+                            <a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox" title="Apemanboards">
+                                <img class="p-img" src="images/p2.jpg" alt="Apemanboards" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="port-info">
+                            <h4><a href="#" title="Apemanboards"> Apemanboards</a></h4>
+                            <span>Website</span>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>	
+                    <a class="more-ports text-center" href="#"><span> </span></a>																																				
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="row">
+            <div class="container">
+                <div class="col-md-12 text-center logo">
+                    <a href="#" title="Blue Agency"><img src="images/logo-footer.jpg" alt="Blue Agency" /></a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*
+                var defaults = {
+                    containerID: 'toTop', // fading element id
+                    containerHoverID: 'toTopHover', // fading element hover id
+                    scrollSpeed: 1200,
+                    easingType: 'linear' 
+                };
+                */
+
+                $().UItoTop({ easingType: 'easeOutQuart' });
+
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;" title="Back to Top"> <span id="toTopHover" style="opacity: 1;">  </span></a>
+    </footer>
+
+
+    <!-- SCRIPTS !-->
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/wow.js"></script>
+    
+</body>
+
+</html>
